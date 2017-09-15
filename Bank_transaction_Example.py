@@ -1,0 +1,41 @@
+# Author name : Kote Seema M
+# Created Date : 15th Sep 2017
+# Credits: zhiwehu ('https://github.com/zhiwehu') 
+
+"""
+	Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
+	D 100
+	W 200
+	бн
+	D means deposit while W means withdrawal.
+	Suppose the following input is supplied to the program:
+	D 300
+	D 300
+	W 200
+	D 100
+	Then, the output should be:
+	500
+"""
+print "Transacition Details: "
+netAmount = 0
+while True:
+    s = raw_input("")
+    if s:
+        values = s.split(" ")
+        operation = values[0]
+        # print operation
+        amount = int(values[1])
+        if operation == 'D':
+            netAmount += amount
+            # print netAmount
+        elif operation == 'W':
+            netAmount -= amount
+        else:
+            pass
+    else:
+        break
+		
+print "Balance : %s" %(netAmount)
+
+
+
