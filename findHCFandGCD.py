@@ -1,3 +1,6 @@
+# Author name : Kote Seema M ('https://github.com/seema-kote/')
+# Created Date : 12th Sep 2017
+
 class maths:
     def findHCF(self,number1, number2):
         smallest = min(number1,number2)
