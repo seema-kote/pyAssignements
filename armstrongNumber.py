@@ -1,3 +1,6 @@
+# Author name : Kote Seema M ('https://github.com/seema-kote/')
+# Created Date : 12th Sep 2017
+
 number = raw_input("enter number: ")
 order = raw_input("Enter order: ")
 
